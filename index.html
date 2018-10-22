@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Editor</title>
+    <script>
+        function refresh() {
+            var textContent = document.getElementById('editor-textarea').value;
+            document.getElementById('viewer').srcdoc = textContent;
+        }
 
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            background: #ecf0f1;
+            height: 100%;
+            width: 100%;
+            display:inline-flex ;
+        }
+
+        #viewer {
+            background: white;
+
+            width: 100%;
+            border: none;
+            margin: 10px;
+            border: none;
+            border: 1px solid #3498;
+        }
+
+        #editor-textarea {
+            width: 100%;
+            height: 95%;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <textarea id="editor-textarea" onkeyup="refresh()" placeholder="Code Here ......"></textarea>
+    <iframe id="viewer"></iframe>
+
+</div>
+</body>
+</html>
