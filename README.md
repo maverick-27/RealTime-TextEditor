@@ -1,4 +1,4 @@
-# RealTime-TextEditor for Web D
+# RealTime-TextEditor for Web Devlopment 
 
 Text Editor aims to automatically generate your code in real time for  web dev without any plugin , the data provided using input files like html, css & js .
 
