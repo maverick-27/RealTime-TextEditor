@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <style>
+        #btn {
+            background: red;
+            padding: 10px;
+            color: white;
+            position: absolute;
+            cursor: pointer;
+            border-radius: 5px;
+            left: 50%;
+            top: 50%;
+            transition: all 0.5s;
+        }
 
+    </style>
+    <script>
+        function mansion() {
+          document.getElementsByName('btn').value = "In Process ...... Just wait and watch" ;
+          alert("In process Coming Soon")
+
+        }
+    </script>
+</head>
+<body>
+<div id="btn" onclick="mansion()"> Good Results </div>
+
+</body>
+</html>
